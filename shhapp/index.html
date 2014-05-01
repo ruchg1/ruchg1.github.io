@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shh! Mobile</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+	<script type="text/javascript">
+function playfile(soundfile) {
+document.getElementById(soundfile).play();
+}
+</script>
+    <script src="../js/vendor/modernizr.js"></script>
+	<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "9dffd669-62c3-465d-8028-e049d7a3dd9d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<style>
+body{
+  color: black;
+
+}
+.footer {
+color: black;
+width:200px;
+ margin-left: auto ;
+  margin-right: auto ;
+}
+.footertext {
+
+ bottom:0;
+position:absolute;
+display:block;
+text-align:center;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="../shadowbox.css">
+<script type="text/javascript" src="../shadowbox.js"></script>
+<script type="text/javascript">
+Shadowbox.init();
+</script>
+  </head>
+  <body>
+
+	<div class="row">
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+    <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Shh! Mobile</a></h1>
+        </li>
+      </ul>
+  </ul>
+  </nav>
+</div>
+
+
+<div class="row">
+<p>
+Select a noise:<br/>
+        <a href="javascript:void(0);" onclick="playfile(1);" class="radius button expand">Shh!</a><br/>
+<a href="javascript:void(0);" onclick="playfile(2);" class="radius button expand">Hehehe</a><br/>
+<a href="javascript:void(0);" onclick="playfile(3);" class="radius button expand">Wololo</a>
+<audio id="1" hidden="hidden">
+   <source src="ssh.ogg" />  
+   <source src="ssh.mp3" />
+    </audio>
+<audio id="2" hidden="hidden">
+   <source src="hehehe.ogg" />  
+   <source src="hehehe.mp3" />
+</audio>
+<audio id="3" hidden="hidden">
+   <source src="Wololo.ogg" />  
+   <source src="Wololo.mp3" />
+</audio>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+	</div>
+  </body>
+</html>
